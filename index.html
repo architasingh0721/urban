@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>India Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Explore India</h1>
+        </div>
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Search for places..." onkeyup="searchPlaces()">
+            <select id="filterSelect" onchange="filterPlaces()">
+                <option value="all">All Categories</option>
+                <option value="historical">Historical</option>
+                <option value="beach">Beach</option>
+                <option value="hill">Hill Station</option>
+                <option value="city">City</option>
+                <option value="park">Park</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <div id="placesContainer" class="places-container">
+            <!-- Dynamic content will be injected here -->
+        </div>
+        <div id="noResults" class="no-results" style="display: none;">
+            No results found. Please try different search or filter criteria.
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explore India. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Razorpay Library -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    
